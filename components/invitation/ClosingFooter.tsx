@@ -3,7 +3,7 @@ import { COUPLE } from "@/lib/site-data";
 
 export default function ClosingFooter() {
   return (
-    <section className="bg-foreground text-background">
+    <section className="flex min-h-[100svh] items-center bg-foreground text-background">
       <div className="mx-auto flex max-w-3xl flex-col items-center px-4 py-24 text-center sm:px-6">
         <p className="text-xs uppercase tracking-[0.4em] text-background/60">
           Merupakan suatu kehormatan

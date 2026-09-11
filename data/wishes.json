@@ -1,0 +1,20 @@
+[
+  {
+    "id": "08d6434d-22a9-450c-a39b-afe17c5d5972",
+    "name": "Keluarga Besar Prasetyo",
+    "message": "Selamat menempuh hidup baru, semoga menjadi keluarga yang sakinah, mawaddah, warahmah.",
+    "createdAt": 1789105545548
+  },
+  {
+    "id": "efc4d4c0-de13-4ea1-a45e-6d1bebe1b88f",
+    "name": "Sahabat SMA",
+    "message": "Akhirnya! Semoga langgeng sampai kakek nenek ya. Bahagia selalu!",
+    "createdAt": 1789105546548
+  },
+  {
+    "id": "7de59c96-f6dc-4a06-8ce0-3507d633654a",
+    "name": "Rekan Kerja Joo",
+    "message": "Selamat ya Joo! Semoga pernikahan kalian diberkahi dan selalu dilimpahi kebahagiaan.",
+    "createdAt": 1789105547548
+  }
+]

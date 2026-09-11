@@ -86,7 +86,7 @@ export const WEDDING_GALLERY = [
   "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2",
 ] as const;
 
-export const MUSIC_URL = "";
+export const MUSIC_URL = "/Reality_Club_-_Alexandra_(mp3.pm).mp3";
 
 export const PREWED_YOUTUBE_URL =
   "https://www.youtube.com/embed/y4bSFu5DySE";

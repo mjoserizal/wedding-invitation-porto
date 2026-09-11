@@ -6,10 +6,8 @@ import { COUPLE } from "@/lib/site-data";
 
 function PersonCard({
   person,
-  opposite,
 }: {
   person: (typeof COUPLE)["groom"];
-  opposite: (typeof COUPLE)["bride"];
 }) {
   return (
     <div className="flex flex-col items-center text-center">
@@ -23,10 +21,7 @@ function PersonCard({
           className="aspect-square w-52 rounded-full object-cover shadow-lg sm:w-64"
         />
       </div>
-      <p className="mt-4 font-heading text-xl font-medium text-foreground">
-        {opposite.name}
-      </p>
-      <p className="mt-1 font-heading text-3xl font-medium text-primary sm:text-4xl">
+      <p className="mt-4 font-heading text-3xl font-medium text-primary sm:text-4xl">
         {person.name}
       </p>
       <p className="mt-3 text-sm text-muted-foreground">{person.family}</p>
@@ -56,10 +51,10 @@ export default function CoupleSection() {
 
         <div className="grid gap-14 md:grid-cols-2 md:gap-8">
           <Reveal direction="left">
-            <PersonCard person={COUPLE.bride} opposite={COUPLE.groom} />
+            <PersonCard person={COUPLE.bride} />
           </Reveal>
           <Reveal direction="right" delay={150}>
-            <PersonCard person={COUPLE.groom} opposite={COUPLE.bride} />
+            <PersonCard person={COUPLE.groom} />
           </Reveal>
         </div>
       </div>

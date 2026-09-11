@@ -23,43 +23,44 @@ export default function Hero() {
         path={FLOWER_JSON_PATH}
         swayStart={160}
         swayEnd={270}
-        className="absolute -bottom-2 left-0 z-0 w-20 -rotate-[35deg] opacity-90 sm:w-28 lg:left-0 lg:w-52"
+        className="absolute -bottom-6 left-0 z-0 w-16 -rotate-[35deg] opacity-90 sm:w-24 md:w-40 lg:left-0 lg:w-52"
       />
       <LottieFlower
         path={FLOWER_JSON_PATH}
         swayStart={160}
         swayEnd={270}
-        className="absolute -bottom-2 right-0 z-0 w-20 rotate-[35deg] opacity-90 sm:w-28 lg:right-0 lg:w-52"
+        className="absolute -bottom-6 right-0 z-0 w-16 rotate-[35deg] opacity-90 sm:w-24 md:w-40 lg:right-0 lg:w-52"
       />
 
       <div className="relative z-10 flex max-w-3xl flex-col items-center">
-        <p className="text-xs font-medium uppercase tracking-[0.5em] text-muted-foreground">
+        <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-muted-foreground sm:text-xs sm:tracking-[0.5em]">
           Undangan Pernikahan
         </p>
 
-        <div className="mt-8 min-h-8 text-base text-muted-foreground">
+        <div className="mt-6 min-h-6 text-sm text-muted-foreground sm:mt-8 sm:text-base">
           {guestName ? (
             <>
-              Kepada Yth. Bapak/Ibu/Saudara/i <span className="text-primary">{guestName}</span>
+              Kepada Yth. Bapak/Ibu/Saudara/i{" "}
+              <span className="text-primary">{guestName}</span>
             </>
           ) : (
             "Kepada Yth. Bapak/Ibu/Saudara/i"
           )}
         </div>
 
-        <h1 className="mt-6 font-heading text-3xl font-medium leading-tight sm:text-5xl lg:text-6xl">
+        <h1 className="mt-5 font-heading text-2xl font-medium leading-tight sm:mt-6 sm:text-4xl lg:text-5xl">
           {COUPLE.bride.name}
-          <span className="mx-4 font-light text-gold">&amp;</span>
+          <span className="mx-3 font-light text-gold sm:mx-4">&amp;</span>
           {COUPLE.groom.name}
         </h1>
 
-        <FlowerDivider className="mt-8 text-gold" />
+        <FlowerDivider className="mt-6 text-gold sm:mt-8" />
 
-        <p className="mt-6 text-sm uppercase tracking-[0.35em] text-muted-foreground">
+        <p className="mt-5 text-xs uppercase tracking-[0.2em] text-muted-foreground sm:mt-6 sm:text-sm sm:tracking-[0.3em]">
           {EVENT_DETAILS.dateLabel}
         </p>
 
-        <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">
+        <p className="mt-2 max-w-[28rem] px-2 text-center text-sm leading-relaxed text-muted-foreground">
           Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
           menyelenggarakan acara pernikahan kami. Merupakan suatu kehormatan
           dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir
@@ -68,10 +69,10 @@ export default function Hero() {
 
         <a
           href="#mempelai"
-          className="mt-12 flex flex-col items-center gap-1 text-muted-foreground transition-colors hover:text-primary"
+          className="mt-10 flex flex-col items-center gap-1 text-muted-foreground transition-colors hover:text-primary sm:mt-12"
           aria-label="Gulir ke section berikutnya"
         >
-          <span className="text-[10px] uppercase tracking-[0.3em]">
+          <span className="text-[9px] uppercase tracking-[0.3em] sm:text-[10px]">
             Scroll
           </span>
           <ChevronDown className="size-5 animate-bounce" />
