@@ -23,13 +23,13 @@ export default function Hero() {
         path={FLOWER_JSON_PATH}
         swayStart={160}
         swayEnd={270}
-        className="absolute -bottom-6 left-0 z-0 w-16 -rotate-[35deg] opacity-90 sm:w-24 md:w-40 lg:left-0 lg:w-52"
+        className="absolute -top-8 left-0 z-0 w-32 rotate-[135deg] -scale-x-100 opacity-90 sm:w-44 md:w-60 lg:left-0 lg:w-80"
       />
       <LottieFlower
         path={FLOWER_JSON_PATH}
         swayStart={160}
         swayEnd={270}
-        className="absolute -bottom-6 right-0 z-0 w-16 rotate-[35deg] opacity-90 sm:w-24 md:w-40 lg:right-0 lg:w-52"
+        className="absolute -bottom-8 right-0 z-0 w-32 -rotate-45 opacity-90 sm:w-44 md:w-60 lg:right-0 lg:w-80"
       />
 
       <div className="relative z-10 flex max-w-3xl flex-col items-center">

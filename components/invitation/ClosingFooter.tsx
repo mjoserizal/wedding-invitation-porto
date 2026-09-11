@@ -24,6 +24,20 @@ export default function ClosingFooter() {
           {COUPLE.bride.name} &amp; {COUPLE.groom.name}
         </p>
 
+        <p className="mt-10 text-xs font-medium uppercase tracking-[0.3em] text-gold/70">
+          Playlist Pilihan Kami
+        </p>
+        <div className="mt-6 w-full max-w-sm mx-auto overflow-hidden rounded-2xl border border-gold/25 shadow-lg">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/7Kdg3bpDS3S7f3J9PsCL8r?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          />
+        </div>
+
         <div className="mt-16 border-t border-background/15 pt-6 text-xs text-background/50">
           ©2027 · Undangan Pernikahan {COUPLE.bride.name} &amp;{" "}
           {COUPLE.groom.name}

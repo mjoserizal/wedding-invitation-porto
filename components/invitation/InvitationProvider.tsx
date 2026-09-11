@@ -2,13 +2,12 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
-  useRef,
   useState,
   type ReactNode,
 } from "react";
-import { MUSIC_URL } from "@/lib/site-data";
 
 type InvitationContextValue = {
   opened: boolean;
@@ -25,18 +24,6 @@ export function InvitationProvider({ children }: { children: ReactNode }) {
   const [opened, setOpened] = useState(false);
   const [guestName, setGuestName] = useState("");
   const [musicPlaying, setMusicPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  useEffect(() => {
-    if (MUSIC_URL) {
-      audioRef.current = new Audio(MUSIC_URL);
-      audioRef.current.loop = true;
-    }
-    return () => {
-      audioRef.current?.pause();
-      audioRef.current = null;
-    };
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = opened ? "" : "hidden";
@@ -45,25 +32,13 @@ export function InvitationProvider({ children }: { children: ReactNode }) {
     };
   }, [opened]);
 
-  const toggleMusic = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (musicPlaying) {
-      audio.pause();
-      setMusicPlaying(false);
-    } else {
-      audio.play().catch(() => {});
-      setMusicPlaying(true);
-    }
-  };
+  const toggleMusic = useCallback(() => {
+    setMusicPlaying((p) => !p);
+  }, []);
 
-  const openInvitation = () => {
+  const openInvitation = useCallback(() => {
     setOpened(true);
-    if (audioRef.current && MUSIC_URL) {
-      audioRef.current.play().catch(() => {});
-      setMusicPlaying(true);
-    }
-  };
+  }, []);
 
   return (
     <InvitationContext.Provider
