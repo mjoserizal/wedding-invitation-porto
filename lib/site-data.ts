@@ -100,9 +100,7 @@ export const UANDI_LOTTIE_PATH = "/uandi.json";
 export const SAWERIA_WIDGET_URL =
   "https://saweria.co/widgets/qr?streamKey=9c636b2ee15af8dbd2c920961cc0f8b3";
 
-export const SAWERIA_QR_URL = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&color=143-163-170&bgcolor=255-255-255&data=${encodeURIComponent(
-  SAWERIA_WIDGET_URL
-)}`;
+export const SAWERIA_QR_URL = "/saweria.png";
 
 export const DEFAULT_WISHES = [
   {

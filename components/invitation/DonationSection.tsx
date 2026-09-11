@@ -14,15 +14,8 @@ export default function DonationSection() {
           description="Hadiah terbaik bagi kami adalah doa dan restu kalian. Namun jika ingin berbagi kebahagiaan dengan cara lain, dapat melalui Saweria di bawah ini."
         />
 
-        <div className="mx-auto mt-14 flex max-w-sm flex-col items-center rounded-3xl border border-border bg-card/50 p-6 shadow-lg sm:p-8">
-          <div className="flex items-center gap-2 text-gold">
-            <span aria-hidden className="size-2 rounded-full bg-gold" />
-            <p className="text-sm font-medium uppercase tracking-[0.3em]">
-              Saweria
-            </p>
-          </div>
-
-          <div className="mt-5 flex w-full justify-center rounded-2xl bg-background p-6 shadow-inner sm:p-8">
+        <div className="mx-auto mt-14 flex max-w-sm flex-col items-center rounded-3xl bg-primary p-6 text-primary-foreground shadow-lg sm:p-8">
+          <div className="mt-5 flex w-full justify-center">
             <a
               href={SAWERIA_WIDGET_URL}
               target="_blank"
@@ -38,7 +31,7 @@ export default function DonationSection() {
             </a>
           </div>
 
-          <p className="mt-5 text-center text-sm text-muted-foreground">
+          <p className="mt-5 text-center text-sm text-primary-foreground/85">
             Scan QR di atas untuk mengirim doa & dukungan, atau klik QR untuk
             membuka halaman Saweria.
           </p>

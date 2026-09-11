@@ -41,6 +41,14 @@ export default function CoupleSection() {
   return (
     <section id="mempelai" className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <p
+          dir="rtl"
+          lang="ar"
+          className="mb-6 text-center text-2xl font-medium leading-loose text-gold sm:text-3xl"
+        >
+          بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </p>
+
         <SectionHeading
           eyebrow="Pasal 1"
           title="Bismillahirrahmanirrahim"
