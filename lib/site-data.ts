@@ -97,8 +97,7 @@ export const FLOWER_JSON_PATH = "/flower.json";
 
 export const UANDI_LOTTIE_PATH = "/uandi.json";
 
-export const SAWERIA_WIDGET_URL =
-  "https://saweria.co/widgets/qr?streamKey=9c636b2ee15af8dbd2c920961cc0f8b3";
+export const SAWERIA_WIDGET_URL = "https://saweria.co/freakyjoo";
 
 export const SAWERIA_QR_URL = "/saweria.png";
 
