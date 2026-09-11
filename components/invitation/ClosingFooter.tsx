@@ -25,7 +25,8 @@ export default function ClosingFooter() {
         </p>
 
         <div className="mt-16 border-t border-background/15 pt-6 text-xs text-background/50">
-          ©2027 · Undangan Pernikahan {COUPLE.bride.name} &amp; {COUPLE.groom.name}
+          ©2027 · Undangan Pernikahan {COUPLE.bride.name} &amp;{" "}
+          {COUPLE.groom.name}
         </div>
       </div>
     </section>
