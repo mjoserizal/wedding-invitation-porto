@@ -24,12 +24,12 @@ export default function ClosingFooter() {
           {COUPLE.bride.name} &amp; {COUPLE.groom.name}
         </p>
 
-        <p className="mt-10 text-xs font-medium uppercase tracking-[0.3em] text-gold/70">
+        <p className="mt-10 text-xs font-medium uppercase tracking-[0.3em] text-background/80">
           Playlist Pilihan Kami
         </p>
-        <div className="mt-6 w-full max-w-sm mx-auto overflow-hidden rounded-2xl border border-gold/25 shadow-lg">
+        <div className="mt-6 w-full max-w-sm mx-auto overflow-hidden rounded-2xl border border-background/15 shadow-lg">
           <iframe
-            src="https://open.spotify.com/embed/playlist/7Kdg3bpDS3S7f3J9PsCL8r?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/playlist/7Kdg3bpDS3S7f3J9PsCL8r?utm_source=generator&theme=1"
             width="100%"
             height="352"
             frameBorder="0"
