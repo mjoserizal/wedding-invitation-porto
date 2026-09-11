@@ -110,11 +110,11 @@ export default function Cover() {
 
           <div
             style={{ animationDelay: `${STAGGER[5].delay}ms` }}
-            className="animate-cover-fade-up mt-[clamp(1.25rem,3.5vh,2.5rem)] w-full max-w-sm motion-reduce:animate-none"
+            className="animate-cover-fade-up mt-[clamp(1.25rem,3.5vh,2.5rem)] w-full max-w-[22rem] rounded-3xl border border-gold/25 bg-background/10 px-6 py-6 shadow-lg backdrop-blur-md motion-reduce:animate-none sm:max-w-sm"
           >
             <label
               htmlFor="guest-name"
-              className="block text-[clamp(0.625rem,2.8vw,0.75rem)] uppercase tracking-[0.3em] text-background/70"
+              className="block text-center text-[clamp(0.625rem,2.8vw,0.75rem)] uppercase tracking-[0.3em] text-background/70"
             >
               Kepada Yth. Bapak/Ibu/Saudara/i
             </label>
@@ -124,18 +124,16 @@ export default function Cover() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Masukkan nama Anda"
-              className="mt-[clamp(0.75rem,2vh,0.875rem)] w-full rounded-full border border-background/40 bg-background/10 px-5 py-3 text-center text-sm text-background placeholder:text-background/50 backdrop-blur-sm focus:border-gold focus:outline-none"
+              className="mt-[clamp(0.75rem,2vh,0.875rem)] w-full rounded-full border border-background/40 bg-background/20 px-5 py-3 text-center text-sm text-background placeholder:text-background/50 backdrop-blur-sm focus:border-gold focus:outline-none"
             />
+            <button
+              type="button"
+              onClick={handleOpen}
+              className="mt-[clamp(0.75rem,2vh,1rem)] w-full rounded-full bg-primary px-8 py-3 text-sm font-medium uppercase tracking-[0.25em] text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary motion-reduce:animate-none"
+            >
+              Buka Undangan
+            </button>
           </div>
-
-          <button
-            type="button"
-            onClick={handleOpen}
-            style={{ animationDelay: `${STAGGER[6].delay}ms` }}
-            className="animate-cover-fade-up mt-[clamp(0.75rem,2vh,1.5rem)] w-full max-w-sm rounded-full bg-primary px-8 py-3 text-sm font-medium uppercase tracking-[0.25em] text-primary-foreground shadow-lg shadow-primary/30 transition-colors hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary motion-reduce:animate-none"
-          >
-            Buka Undangan
-          </button>
         </div>
       </div>
     </div>
